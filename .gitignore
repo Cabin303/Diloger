@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Generated audio and Whisper output
+*.wav
+*.aiff
+*.mp3
+*.m4a
+# Only synthetic, committed fixtures may be audio.
+!tests/fixtures/*.wav
+*.out
+whisper-*.json
+
+# Local user data must stay out of Git
+sessions/
+config.json
+
+# macOS
+.DS_Store
+
+logs/
+
+# Probe scratch: recordings, Whisper output and GUI screenshots of real content.
+# Recreated on every run, and the screenshots can contain real library files,
+# prompts and transcripts, so none of it belongs in the repository.
+.probe/
