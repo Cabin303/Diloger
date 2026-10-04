@@ -47,7 +47,7 @@ simply get no transcript.
 ## Getting started
 
 ```sh
-git clone <your-fork-url> Diloger
+git clone https://github.com/Cabin303/Diloger.git
 cd Diloger
 ./Diloger.command
 ```
